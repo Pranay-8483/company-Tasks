@@ -1,0 +1,101 @@
+let timer = 0;
+let interval = null;
+let started = false;
+
+
+(function(){
+      emailjs.init("QcV1Kiv-E_ZXpHToi"); 
+    })();
+
+const sampleText = document.getElementById("sample-text").innerText;
+const typingBox = document.getElementById("typing-box");
+const timeEl = document.getElementById("time");
+const wpmEl = document.getElementById("wpm");
+const accuracyEl = document.getElementById("accuracy");
+
+document.getElementById("start-btn").onclick = () => {
+  typingBox.disabled = false;
+  typingBox.focus();
+  started = true;
+
+  interval = setInterval(() => {
+    timer++;
+    timeEl.innerText = timer + "s";
+    updateStats();
+  }, 1000);
+};
+
+
+document.getElementById("stop-btn").onclick = () => {
+  if (started) {
+    clearInterval(interval);
+    typingBox.disabled = true;
+    started = false;
+  }
+};
+
+
+document.getElementById("submit").onclick = () => {
+  document.getElementById("email-form").submit();
+};
+
+
+document.getElementById("reset-btn").onclick = () => {
+  window.location.reload();
+};
+
+typingBox.addEventListener("input", updateStats);
+
+function updateStats() {
+  const typed = typingBox.value;
+
+  // WPM
+  const words = typed.trim().split(" ").length;
+  const wpm = Math.round((words / timer) * 60) || 0;
+  wpmEl.innerText = wpm;
+
+  // Accuracy
+  let correct = 0;
+  for (let i = 0; i < typed.length; i++) {
+    if (typed[i] === sampleText[i]) correct++;
+  }
+  const accuracy = Math.round((correct / typed.length) * 100) || 0;
+  accuracyEl.innerText = accuracy + "%";
+}
+
+// Email send
+document.getElementById("email-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const templateParams = {
+    user_name: document.getElementById("username").value,
+    user_email: document.getElementById("useremail").value,
+    result_wpm: wpmEl.innerText,
+    result_accuracy: accuracyEl.innerText,
+    result_time: timeEl.innerText,
+    sample_text: sampleText,
+    typed_text: typingBox.value,
+    developer_email: "vankadari.watsup@gmail.com"
+  };
+
+  const status = document.getElementById("status");
+
+  try {
+    await emailjs.send("service_a5hnas8", "template_lo71kbe", templateParams);
+    status.innerText = "Results Sent Successfully!";
+  } catch (error) {
+    status.innerText = "Failed to send email.";
+    status.style.color = "red";
+  }
+});
+
+
+
+
+
+
+
+
+
+
+kxwv mpjl jhrj mocd

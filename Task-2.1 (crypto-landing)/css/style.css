@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    background-color: #0a0229;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: #0c012b !important;
+}
+
+.trade-btn{
+    background-color: transparent;
+    border-radius: 30px;                      
+    border: 2px solid red;
+    color: #ffffff;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 13px;
+    width: auto;
+    height: auto;
+}
+.sec1-img {
+    max-height: 350px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+
+.get-whitelisted-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: rgb(247, 24, 24);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.get-whitelisted-btn:hover {
+  background: linear-gradient(135deg, #66BB6A, #388E3C);
+  transform: translateX(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+
+.get-whitelisted-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.feature-card {
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.feature-img {
+    width: 120px;
+    transition: 0.3s;
+}
+
+.feature-card:hover .feature-img {
+    transform: scale(1.15);
+}
+
+.mobile-img {
+    max-width: 350px;
+    animation: slideup 1.2s ease-in-out;
+}
+
+@keyframes slideup {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.store-icons img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+.subscribe-section {
+    background: linear-gradient(to bottom, #0b0033, #2b004b);
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.subscribe-section h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.subscribe-section p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #dcdcdc;
+}
+
+
+.drop-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+.drop-form input[type="email"] {
+    flex: 1;
+    padding: 16px 20px;
+    border-radius: 40px;
+    border: 2px solid #ffffff;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+
+.drop-form input::placeholder {
+    color: #dcdcdc;
+}
+
+
+.drop-form input:focus {
+    border-color: #ff7f7f;
+}
+
+
+.drop-form button {
+    padding: 14px 32px;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    background: #e96a66;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+
+.drop-form button:hover {
+    background: #ff7f7f;
+}
+
+
+
+
+.footer {
+    background: linear-gradient(to bottom, #210045, #30006e);
+    color: #fff;
+    padding: 60px 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-column a {
+    display: block;
+    color: #cfcfcf;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+.footer-line {
+    border: none;
+    border-top: 1px solid #644c9f;
+    margin: 40px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #cfcfcf;
+    font-size: 15px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+    /* Navbar */
+    .navbar .trade-btn {
+        display: none;
+    }
+
+    /* Hero Section */
+    .sec1 .d-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sec1 h1,
+    .sec1 p {
+        text-align: center !important;
+    }
+
+    .sec1-img {
+        margin-top: 30px;
+        max-width: 90%;
+    }
+
+    /* Crypto Table */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 900px;
+    }
+
+    /* Features */
+    .feature-card {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    /* Mobile App Section */
+    #team .d-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobile-img {
+        margin-top: 30px;
+        max-width: 80%;
+    }
+
+    /* Blog Cards */
+    #blog .d-flex {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* Subscribe */
+    .drop-form {
+        flex-direction: column;
+    }
+
+    .drop-form input,
+    .drop-form button {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-icons i {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Hero Section */
+    .sec1 .d-flex {
+        flex-direction: column;
+    }
+
+    /* Features */
+    .feature-card {
+        text-align: center;
+    }
+
+    /* Blog Cards */
+    #blog .d-flex {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Hero */
+    .sec1-img {
+        max-width: 300px;
+    }
+
+    /* Mobile App */
+    .mobile-img {
+        max-width: 300px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    /* Navbar */
+    .navbar-brand span {
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    .sec1 h1 {
+        font-size: 22px;
+    }
+
+    .sec1 p {
+        font-size: 13px;
+    }
+
+    .get-whitelisted-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .sec1-img {
+        max-width: 85%;
+
+    }
+
+    /* Crypto Table */
+    table {
+        min-width: 950px;
+    }
+
+    /* Features */
+    .feature-img {
+        width: 90px;
+    }
+
+    /* Mobile App */
+    .mobile-img {
+        max-width: 85%;
+    }
+
+    /* Subscribe */
+    .subscribe-section h1 {
+        font-size: 26px;
+    }
+
+    .subscribe-section p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* Hero Section */
+    .sec1 h1 {
+        font-size: 24px;
+    }
+
+    .sec1 p {
+        font-size: 14px;
+    }
+
+    .sec1-img {
+        max-width: 90%;
+    }
+
+    /* Table */
+    table {
+        min-width: 920px;
+    }
+
+    /* Features */
+    .feature-img {
+        width: 100px;
+    }
+
+    /* Subscribe */
+    .subscribe-section h1 {
+        font-size: 30px;
+    }
+
+    .subscribe-section p {
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    /* Hero Section */
+    .sec1 h1 {
+        font-size: 26px;
+    }
+
+    .sec1 p {
+        font-size: 15px;
+    }
+
+    /* Table */
+    table {
+        min-width: 900px;
+    }
+
+    /* Mobile App */
+    .mobile-img {
+        max-width: 75%;
+    }
+
+    /* Blog Cards */
+    #blog .card {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    /* Subscribe */
+    .subscribe-section h1 {
+        font-size: 34px;
+    }
+
+    /* Footer */
+    .footer-container {
+        align-items: center;
+    }
+}
+
+
+
+
+
