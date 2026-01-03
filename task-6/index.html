@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My HTML Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>My HTML Portfolio</h1>
+
+      <hr />
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Demo</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- ABOUT -->
+    <section>
+      <h2>About HTML</h2>
+      <hr />
+      <p>
+        HTML stands for HyperText Markup Language. It is the standard language
+        used to create web pages.
+      </p>
+    </section>
+
+    <hr />
+    <!--IMAGE   -->
+    <section>
+      <h2>Key Features of HTML</h2>
+      <hr />
+      <div class="flex">
+        <ul>
+          <li>Easy to learn</li>
+          <li>Semantic structure</li>
+          <li>Multimedia support</li>
+          <li>Forms and tables</li>
+        </ul>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+            alt="Laptop and coffee"
+          />
+          <figcaption style="text-align: left">Laptop and coffee</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <h2>HTML Topics Covered</h2>
+    <hr />
+    <!--TABLE-->
+    <section class="flex">
+      <div>
+        <ol>
+          <li>Headings & Sections</li>
+          <li>Lists and Tables</li>
+          <li>Forms and Inputs</li>
+          <li>Media Embeds</li>
+        </ol>
+      </div>
+
+      <div>
+        <h3
+          style="
+            border: 0px solid #000;
+            background-color: rgb(210, 207, 207);
+            padding: 5px;
+          "
+        >
+          Project Timeline
+        </h3>
+        <table>
+          <tr style="background-color: rgb(210, 207, 207)">
+            <th>Phase</th>
+            <th>Tasks</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>Planning</td>
+            <td>Research & Outline</td>
+            <td>1 Week</td>
+          </tr>
+          <tr style="background-color: rgb(210, 207, 207)">
+            <td>Development</td>
+            <td>Coding Content</td>
+            <td>2 Weeks</td>
+          </tr>
+          <tr>
+            <td>Review</td>
+            <td>Testing & Fixes</td>
+            <td>3 Days</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Resources -->
+    <section>
+      <h2>Resources</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/">MDN Web Docs</a> - HTML
+          Guide<br />
+          <small>Comprehensive HTML reference</small>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/">W3Schools</a> - HTML Tutorial<br />
+          <small>Learn HTML basics</small>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- Video -->
+    <section>
+      <h2>Demo Video</h2>
+      <iframe
+        src="https://www.youtube.com/embed/UB1O30fR-EE"
+        title="HTML Tutorial"
+        loading="lazy"
+        allowfullscreen
+      >Lazy-loaded demo via iframe
+      </iframe>
+
+      
+    </section>
+
+    <hr />
+
+    <!-- Contact -->
+    <section>
+      <h2>Contact Me</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" />
+        <br />
+        <label>Email:</label>
+        <input type="email" />
+        <br />
+        <label>Message:</label>
+        <textarea></textarea>
+
+        <br />
+        
+          <input type="checkbox" id="newsletter" />
+          <label for="newsletter">Subscribe to our newsletter?</label>
+
+          <input type="checkbox" id="" />
+          <label for="">Yes</label>
+
+          <input type="checkbox" id="" />
+          <label for="">No</label>
+          <br />
+
+          <label>Preferred Contact:</label>
+          <input type="checkbox" />
+          <label>Email</label>
+          <input type="checkbox" />
+          <label>Phone</label>
+          <br />
+          <br />
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+      © 2024 My HTML Portfolio |
+      <a href="mailto:contact@example.com">contact@example.com</a> | Location:
+      Anytown, USA
+    </footer>
+  </body>
+</html>
