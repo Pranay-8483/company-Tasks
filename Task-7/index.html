@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Web Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Interactive Web Project</h1>
+      <hr />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Dynamic</a>
+        <a href="#">Timer</a>
+        <a href="#">Contact Form</a>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <!-- ABOUT SECTION -->
+      <section class="about">
+        <div class="about-text">
+          <h2>About This Project</h2>
+          <p>
+            This is a sample interactive web page built using HTML and
+            JavaScript. It features dynamic content manipulation, form
+            validation, and local storage.
+          </p>
+
+          <h4>Features Demonstrated:</h4>
+          <ul>
+            <li>DOM manipulation</li>
+            <li>Form validation</li>
+            <li>Event-handling</li>
+            <li>Dynamic content-updates</li>
+            <li>Local storage</li>
+          </ul>
+        </div>
+
+        <div class="about-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.196580716051!2d78.33272167341266!3d17.49812699960899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d5ccaa5227%3A0xde534d4e3362e42b!2sOppty%20TechHub%20Private%20Limited!5e0!3m2!1sen!2sin!4v1767601899783!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <button class="btn-toggle">Toggle Map</button>
+        </div>
+      </section>
+
+      <!-- CONTENT GRID -->
+      <section class="grid">
+        <!-- TODO LIST -->
+        <div class="card">
+          <h3>Interactive To-Do List</h3>
+          <hr />
+          <div class="todo-input">
+            <input type="text" placeholder="New Task..." />
+            <button class="btn-add">Add</button>
+          </div>
+
+          <ul class="todo-list">
+            <li>Learn HTML <button style="padding: 3px">Remove</button></li>
+            <li>
+              Practice JavaScript <button style="padding: 3px">Remove</button>
+            </li>
+            <li>
+              Store data in localStorage
+              <button style="padding: 3px">Remove</button>
+            </li>
+          </ul>
+
+          <div class="note">
+            Tasks are saved in your browser's local storage.
+          </div>
+          <div class="clear-btn">
+            <button class="btn-clear">Clear All Tasks</button>
+          </div>
+        </div>
+
+        <!-- TIMER -->
+        <div class="card">
+          <h3>Auto-Updating Timer</h3>
+          <hr />
+          <p>This counter auto-updates every second:</p>
+
+          <h2 class="timer">Time elapsed: 00:00:08</h2>
+
+          <div class="btn-group">
+            <button class="btn">Pause Timer</button>
+            <button class="btn">Reset Timer</button>
+          </div>
+        </div>
+
+        <!-- TIMER DUPLICATE -->
+        <div class="card">
+          <h3>Auto-Updating Timer</h3>
+          <hr />
+          <p>This counter auto-updates every second:</p>
+
+          <h2 class="timer">Time elapsed: 00:00:08</h2>
+
+          <div class="btn-group">
+            <button class="btn">Pause Timer</button>
+            <button class="btn">Reset Timer</button>
+          </div>
+
+          <div class="map-section">
+            <h3>Feat Hessions & Videos</h3>
+            <hr style="margin-bottom: 15px" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.196580716051!2d78.33272167341266!3d17.49812699960899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d5ccaa5227%3A0xde534d4e3362e42b!2sOppty%20TechHub%20Private%20Limited!5e0!3m2!1sen!2sin!4v1767601899783!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <button class="btn-toggle">Toggle Map</button>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="card">
+          <h3>Contact Form</h3>
+          <hr style="margin-bottom: 15px" />
+          <label>Name:</label>
+          <input type="text" />
+          <small class="error">Please enter your name.</small><br />
+
+          <label>Email:</label>
+          <input type="email" />
+          <small class="error">Please enter a valid email address.</small><br />
+
+          <label>Password:</label>
+          <input type="password" />
+          <small class="error"
+            >Password must be at least 6 characters long.</small
+          ><br />
+
+          <label>Message:</label>
+          <textarea></textarea>
+
+          <div class="checkbox">
+            <span>Subscribe to newsletter?</span>
+            <label><input type="checkbox" /> Yes</label>
+            <label><input type="checkbox" /> No</label>
+          </div>
+
+          <div class="checkbox">
+            <span>Preferred Contact:</span>
+            <label><input type="checkbox" /> Email</label>
+            <label><input type="checkbox" /> Phone</label>
+          </div>
+
+          <button class="btn-clear">Clear Data</button>
+          <hr style="margin-top: 15px" />
+
+          <p class="success">Your information is saved in this browser!</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      © 2024 Interactive Web Project | Your email:
+      <a href="#">user@example.com</a>
+      <br />
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a>
+    </footer>
+  </body>
+</html>
