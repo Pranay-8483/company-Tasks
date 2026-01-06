@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* HEADER */
+.header {
+  background: #d3cfcf;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-style: italic;
+}
+
+.socials i {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  color: #7fe6e1;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  min-height: 80vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.sidebar img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar .active {
+  background: #7fe6e1;
+  color: white;
+}
+
+.sidebar p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sidebar p span {
+  font-weight: bold;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 25px;
+  background: #fff;
+}
+
+.content h2 {
+  margin: 15px 0 8px;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+/* SKILLS TABLE */
+.skills {
+  width: 100%;
+  border-collapse: collapse;
+  
+  margin-bottom: 20px;
+}
+
+.skills th {
+  background: #7fe6e1;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ddd;
+}
+.svg-icon{
+    width:30px;
+    height: 30px;
+}
+
+.skills td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  
+}
+
+.skills .icons td {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* FORM */
+.contact {
+  width: 300px;
+}
+
+.contact label {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 6px;
+}
+
+.contact textarea {
+  height: 80px;
+}
+
+.contact button {
+  margin-top: 10px;
+  padding: 6px 12px;
+}
+
+/* FOOTER */
+footer {
+  background: #2f3651;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
